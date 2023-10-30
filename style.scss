@@ -1,0 +1,16 @@
+//colores globales
+:root{
+    --background-color: #FEFDF8;
+    --light-green: #CCDEE0;
+    --light-magenta: #CCBBCB;
+    --baby-blue: #9FB4CF;
+    --dark-lilac: #9D9AB1;
+    --semidark-blue: #93A5BB;
+    --gradient-one: linear-gradient(0deg rgba(159,180,207,1) 0%, rgba(204,222,224,1) 95%);
+    --gradient-two: linear-gradient(0deg, rgba(204,187,203,1) 38%, rgba(159,180,207,1) 88%);
+}
+
+// estilos globales
+html, body { height: 100%; margin: 0; padding: 0; }
+body { background-color: var(--background-color); }
+
