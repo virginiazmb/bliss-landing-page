@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -9,14 +10,21 @@ body {
 }
 
 :root {
-  --background-color: #FEFDF8;
-  --light-green: #CCDEE0;
-  --light-magenta: #CCBBCB;
-  --baby-blue: #9FB4CF;
-  --dark-lilac: #9D9AB1;
-  --semidark-blue: #93A5BB;
-  --gradient-one: linear-gradient(0deg rgba(159,180,207,1) 0%, rgba(204,222,224,1) 95%);
-  --gradient-two: linear-gradient(0deg, rgba(204,187,203,1) 38%, rgba(159,180,207,1) 88%);
+  --background-color: #fefdf8;
+  --light-green: #ccdee0;
+  --light-magenta: #ccbbcb;
+  --baby-blue: #9fb4cf;
+  --dark-lilac: #9d9ab1;
+  --semidark-blue: #93a5bb;
+  --gradient-one: linear-gradient(
+    0deg rgba(159, 180, 207, 1) 0%,
+    rgba(204, 222, 224, 1) 95%
+  );
+  --gradient-two: linear-gradient(
+    0deg,
+    rgba(204, 187, 203, 1) 38%,
+    rgba(159, 180, 207, 1) 88%
+  );
 }
 
 @font-face {
@@ -34,9 +42,97 @@ body {
 header {
   background: rgb(159, 180, 207);
   background: linear-gradient(0deg, rgb(159, 180, 207) 0%, rgb(204, 222, 224) 100%);
-  height: 50vh;
 }
-header .navbar .navbar-text {
+header .navbar .navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .navbar .navbar-menu__text {
   font-family: "Josefine-Sans-Light";
+  font-size: 20px;
   margin: 0;
+  padding-top: 37px;
+  padding-left: 30px;
+}
+header .navbar .navbar-menu .hamburguer {
+  display: block;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgba(159, 180, 207, 0.2509803922);
+  border: none;
+  border-radius: 55px;
+  outline: none;
+  z-index: 1;
+}
+header .navbar .navbar-menu .bars,
+header .navbar .navbar-menu .hamburguer:after,
+header .navbar .navbar-menu .hamburguer:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 8px;
+  background-color: black;
+  margin: 5.6px 2.5px;
+  transition: 0.4s;
+  z-index: 1;
+}
+header .navbar .navbar-menu .is-active:after {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+header .navbar .navbar-menu .is-active:before {
+  transform: rotate(-45deg) translate(-6px, 6.5px);
+}
+header .navbar .navbar-menu .is-active .bars {
+  background-color: transparent;
+}
+header .navbar .navbar-list {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 200px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(197, 213, 235) 0%, rgb(185, 230, 205) 100%);
+  padding-top: 45%;
+  transition: 0.4s;
+}
+header .navbar .navbar-list__items {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-right: 45px;
+}
+header .navbar .navbar-list__items a {
+  text-decoration: none;
+  color: black;
+  font-family: "Josefine-Sans-Regular";
+  font-size: 1.3rem;
+}
+header .navbar .navbar-list .navbar-button__download {
+  display: block;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #1E5248;
+  border: none;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+header .navbar .navbar-list .navbar-button__download a {
+  text-decoration: none;
+  color: white;
+  font-family: "Josefine-Sans-Regular";
+  font-size: 1rem;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
