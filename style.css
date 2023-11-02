@@ -7,6 +7,7 @@ body {
 body {
   background-color: var(--background-color);
   font-family: Montserrat, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -43,96 +44,76 @@ header {
   background: rgb(159, 180, 207);
   background: linear-gradient(0deg, rgb(159, 180, 207) 0%, rgb(204, 222, 224) 100%);
 }
-header .navbar .navbar-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-header .navbar .navbar-menu__text {
+header .navbar-menu__text {
   font-family: "Josefine-Sans-Light";
   font-size: 20px;
   margin: 0;
   padding-top: 37px;
   padding-left: 30px;
 }
-header .navbar .navbar-menu .hamburguer {
+header .navbar-menu__toggle {
   display: block;
-  position: relative;
-  width: 45px;
-  height: 45px;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: rgba(159, 180, 207, 0.2509803922);
+  position: absolute;
+  width: 5rem;
+  aspect-ratio: 1;
+  top: 0.2rem;
+  right: 0.3rem;
+  z-index: 1;
+  background: url(/assets/icons/menu.svg) no-repeat center;
   border: none;
-  border-radius: 55px;
-  outline: none;
-  z-index: 1;
+  border-radius: 20px;
 }
-header .navbar .navbar-menu .bars,
-header .navbar .navbar-menu .hamburguer:after,
-header .navbar .navbar-menu .hamburguer:before {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 2px;
-  border-radius: 8px;
-  background-color: black;
-  margin: 5.6px 2.5px;
-  transition: 0.4s;
-  z-index: 1;
+header .navbar-menu__toggle[aria-expanded=true] {
+  background: url(/assets/icons/close.svg) no-repeat center;
 }
-header .navbar .navbar-menu .is-active:after {
-  transform: rotate(45deg) translate(-4px, -5px);
-}
-header .navbar .navbar-menu .is-active:before {
-  transform: rotate(-45deg) translate(-6px, 6.5px);
-}
-header .navbar .navbar-menu .is-active .bars {
-  background-color: transparent;
-}
-header .navbar .navbar-list {
-  display: block;
+header .navbar-list {
   position: fixed;
-  top: 0;
-  right: 0;
+  inset: 0 0 0 45%;
   margin: 0;
-  width: 200px;
-  min-height: 100vh;
-  background: linear-gradient(180deg, rgb(197, 213, 235) 0%, rgb(185, 230, 205) 100%);
-  padding-top: 45%;
+  flex-direction: column;
+  padding-top: 65%;
+  background: linear-gradient(180deg, rgb(197, 213, 235) 15%, rgb(185, 230, 205) 100%);
   transition: 0.4s;
+  transform: translateX(100%);
 }
-header .navbar .navbar-list__items {
+header .navbar-list__items {
   list-style-type: none;
-  display: block;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 45px;
   margin-right: 45px;
 }
-header .navbar .navbar-list__items a {
+header .navbar-list__items a {
   text-decoration: none;
   color: black;
   font-family: "Josefine-Sans-Regular";
   font-size: 1.3rem;
 }
-header .navbar .navbar-list .navbar-button__download {
-  display: block;
-  width: 150px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #1E5248;
-  border: none;
-  margin-top: 15px;
-  margin-left: 5px;
+header .navbar-list[data-visible=true] {
+  transform: translateX(0%);
 }
-header .navbar .navbar-list .navbar-button__download a {
-  text-decoration: none;
-  color: white;
-  font-family: "Josefine-Sans-Regular";
-  font-size: 1rem;
-  color: white;
+
+@media (min-width: 540px) {
+  header .navbar-menu__toggle {
+    display: none;
+  }
+  header .navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    inset: 0 0 0 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    transform: translateX(0%);
+    transition: none;
+  }
+  header .navbar-list__items {
+    padding-left: 2rem;
+    text-align: center;
+  }
+  header .navbar-list__items a {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
 }/*# sourceMappingURL=style.css.map */

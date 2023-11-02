@@ -1,11 +1,16 @@
+const navbar = document.querySelector('.navbar-list');
+const nav_toggle = document.querySelector('.navbar-menu__toggle');
 
-const menu_btn = document.querySelector('.hamburguer');
-const navbar_list = document.querySelector('.navbar-list');
+// una vez el usuario haga click, se abrirá y se cerrará según la condición que se le da
+nav_toggle.addEventListener('click', () => {
+    const visibility = navbar.getAttribute('data-visible');
     
-menu_btn.addEventListener('click', function() {
-menu_btn.classList.toggle('is-active');
-navbar_list.classList.toggle('is-active');
+// se le asigan ahora el atributo para que se abra, de lo contrario se cerrará
+    if(visibility === 'false') {
+        navbar.setAttribute('data-visible', 'true');
+        nav_toggle.setAttribute('aria-expanded', 'true');
+    } else if (visibility === 'true'){
+        navbar.setAttribute('data-visible', 'false');
+        nav_toggle.setAttribute('aria-expanded', 'false');
+    }
 });
-
-
-
