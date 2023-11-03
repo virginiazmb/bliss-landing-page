@@ -181,17 +181,16 @@ header .first-section__wave {
 
 .second-section {
   background-color: var(--mint-green);
-  height: 450px;
+  height: 60vh;
 }
 .second-section__title {
-  font-family: "Montserrat";
   text-align: center;
   font-size: 27px;
   margin: 0rem 3rem 1rem 3rem;
 }
 .second-section__container {
   width: 100%;
-  height: 100%;
+  height: 70%;
   position: relative;
   max-width: 380px;
   margin: auto;
@@ -199,7 +198,7 @@ header .first-section__wave {
 .second-section__image-1 {
   position: absolute;
   left: 10%;
-  top: 12%;
+  top: 20%;
   z-index: 1;
 }
 .second-section__image-2 {
@@ -212,7 +211,7 @@ header .first-section__wave {
 .second-section__image-3 {
   position: absolute;
   right: 10%;
-  top: 10%;
+  top: 20%;
 }
 
 @media (min-width: 640px) {
