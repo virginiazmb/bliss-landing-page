@@ -109,59 +109,96 @@ header {
   }
 
   // estilos del contenido del header
-
-  .header-content{
+  .header-content {
     display: flex;
     flex-direction: column;
     padding: 2rem 0 0 1rem;
-    &__title{
-      font-family: 'Montserrat';
+    &__title {
+      font-family: "Montserrat";
       font-weight: bolder;
       font-size: 29px;
       padding: 1rem 1rem 0 0;
       margin: 0;
     }
-    &__text{
-      font-family: 'Josefine-Sans-Regular';
+    &__text {
+      font-family: "Josefine-Sans-Regular";
       font-size: 18px;
       padding: 0 1.6rem 0 0;
     }
-    &__button{
+    &__button {
       border: none;
       border-radius: 17px;
       background-color: #324f49;
       margin: 0 1rem;
       padding: 0.7rem 1rem;
-      a{
+      a {
         text-decoration: none;
         color: rgb(239, 239, 239);
-        font-family: 'Josefine-Sans-Regular';
+        font-family: "Josefine-Sans-Regular";
         font-size: 16px;
       }
     }
   }
-  .header-image__container{
+  .header-image__container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 0 1.5rem 0 5rem;
-    .header-image__app{
-      margin-top: -4.5rem;
-      width: 450px;
-      height: 300px;
+    .header-image__app {
+      margin-top: -4.1rem;
     }
   }
 }
 
-
-
-
-
-
-
+//estilos de la primera sección; apartados
+.first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 27px;
+    margin: 2rem 0 0.5rem 0;
+  }
+  &__line {
+    width: 140px;
+    height: 2.5px;
+    background-color: rgb(228, 213, 216);
+    border-radius: 20px;
+    margin-bottom: 2.5rem;
+  }
+  &__previews {
+    display: flex;
+    font-family: "Josefine-Sans-Light";
+    font-size: 13px;
+    margin-bottom: 10px;
+    .section-previews__image {
+      z-index: 1;
+    }
+    .section-previews__box {
+      margin: 0px 20px 30px -50px;
+      align-self: center;
+      .section-previews__text {
+        background: linear-gradient(
+              var(--background-color),
+              var(--background-color)
+            )
+            padding-box,
+          linear-gradient(to right, (var(--baby-blue), var(--light-magenta)))
+            border-box;
+        border-radius: 11px;
+        border: 4px solid transparent;
+        margin: -10px 0 0 -30px;
+        padding: 25px 10px 25px 30px;
+      }
+    }
+  }
+}
 
 //estilos del sidenav y del header para la versión desktop
-@media (min-width: 545px) {
+@media (min-width: 640px) {
   header {
     .navbar-menu__toggle {
       display: none;
@@ -172,7 +209,7 @@ header {
       justify-content: flex-end;
       position: relative;
       inset: 0 0 0 0;
-    
+
       margin: 0;
       padding: 0;
       background: none;
@@ -183,39 +220,8 @@ header {
         margin-top: -20px;
         a {
           font-size: 1rem;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
         }
-      }
-    }
-  }
-}
-
-//estilos de la primera sección; apartados
-.firstsection{
-  .firstsection-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .firstsection-previews{
-    font-family: "Josefine-Sans-Light";
-    font-size: 13px;
-    display: flex;
-    margin-bottom: 10px;
-    .firstsection-previews__image{
-      z-index: 1 !important;
-    }
-    .firstsection-previews__box{
-      margin: 0px 20px 30px -50px;
-      align-self: center;
-      .firstsection-previews__text{
-        background: linear-gradient(var(--background-color), var(--background-color)) padding-box,
-        linear-gradient(to right, (var(--baby-blue), var(--light-magenta))) border-box;
-        border-radius: 11px;
-        border: 4px solid transparent;
-        margin: -10px 0 0 -30px;
-        padding: 25px 10px 25px 30px;
-        z-index: -1 !important;
       }
     }
   }
