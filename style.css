@@ -17,6 +17,7 @@ body {
   --baby-blue: #9fb4cf;
   --dark-lilac: #9d9ab1;
   --semidark-blue: #93a5bb;
+  --mint-green: #B9E5CD;
   --gradient-one: linear-gradient(
     0deg rgba(159, 180, 207, 1) 0%,
     rgba(204, 222, 224, 1) 95%
@@ -132,7 +133,7 @@ header .header-image__container .header-image__app {
   margin-top: -4.1rem;
 }
 header .first-section__wave {
-  margin-bottom: -5px;
+  margin: -12% 0 -2% 0;
 }
 
 .first-section {
@@ -173,6 +174,45 @@ header .first-section__wave {
   border: 4px solid transparent;
   margin: -10px 0 0 -30px;
   padding: 25px 10px 25px 30px;
+}
+.first-section .second-section__wave {
+  margin: -12% 0 -2% 0;
+}
+
+.second-section {
+  background-color: var(--mint-green);
+  height: 450px;
+}
+.second-section__title {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 27px;
+  margin: 0rem 3rem 1rem 3rem;
+}
+.second-section__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 380px;
+  margin: auto;
+}
+.second-section__image-1 {
+  position: absolute;
+  left: 10%;
+  top: 12%;
+  z-index: 1;
+}
+.second-section__image-2 {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.second-section__image-3 {
+  position: absolute;
+  right: 10%;
+  top: 10%;
 }
 
 @media (min-width: 640px) {
