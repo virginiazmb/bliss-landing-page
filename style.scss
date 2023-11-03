@@ -189,3 +189,34 @@ header {
     }
   }
 }
+
+//estilos de la primera sección; apartados
+.firstsection{
+  .firstsection-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .firstsection-previews{
+    font-family: "Josefine-Sans-Light";
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 10px;
+    .firstsection-previews__image{
+      z-index: 1 !important;
+    }
+    .firstsection-previews__box{
+      margin: 0px 20px 30px -50px;
+      align-self: center;
+      .firstsection-previews__text{
+        background: linear-gradient(var(--background-color), var(--background-color)) padding-box,
+        linear-gradient(to right, (var(--baby-blue), var(--light-magenta))) border-box;
+        border-radius: 11px;
+        border: 4px solid transparent;
+        margin: -10px 0 0 -30px;
+        padding: 25px 10px 25px 30px;
+        z-index: -1 !important;
+      }
+    }
+  }
+}
