@@ -147,7 +147,14 @@ header {
     .header-image__app {
       margin-top: -4.1rem;
     }
+<<<<<<< Updated upstream
   }  
+=======
+  }
+  .first-section__wave{
+    margin-bottom: -5px;
+  }
+>>>>>>> Stashed changes
 }
 
 //estilos de la primera sección; apartados
@@ -160,7 +167,7 @@ header {
     font-family: "Montserrat";
     text-align: center;
     font-size: 27px;
-    margin: 2rem 0 0.5rem 0;
+    margin: 0rem 0 0.5rem 0;
   }
   &__line {
     width: 140px;
