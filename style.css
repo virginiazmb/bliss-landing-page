@@ -65,6 +65,7 @@ header .navbar-menu__toggle {
 }
 header .navbar-menu__toggle[aria-expanded=true] {
   background: url(/assets/icons/close.svg) no-repeat center;
+  position: fixed;
 }
 header .navbar-list {
   position: fixed;
@@ -91,8 +92,49 @@ header .navbar-list__items a {
 header .navbar-list[data-visible=true] {
   transform: translateX(0%);
 }
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 1rem;
+}
+header .header-content__title {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 29px;
+  padding: 1rem 1rem 0 0;
+  margin: 0;
+}
+header .header-content__text {
+  font-family: "Josefine-Sans-Regular";
+  font-size: 18px;
+  padding: 0 1.6rem 0 0;
+}
+header .header-content__button {
+  border: none;
+  border-radius: 17px;
+  background-color: #324f49;
+  margin: 0 1rem;
+  padding: 0.7rem 1rem;
+}
+header .header-content__button a {
+  text-decoration: none;
+  color: rgb(239, 239, 239);
+  font-family: "Josefine-Sans-Regular";
+  font-size: 16px;
+}
+header .header-image__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 1.5rem 0 5rem;
+}
+header .header-image__container .header-image__app {
+  margin-top: -4.5rem;
+  width: 450px;
+  height: 300px;
+}
 
-@media (min-width: 540px) {
+@media (min-width: 545px) {
   header .navbar-menu__toggle {
     display: none;
   }
@@ -109,8 +151,8 @@ header .navbar-list[data-visible=true] {
     transition: none;
   }
   header .navbar-list__items {
-    padding-left: 2rem;
     text-align: center;
+    margin-top: -20px;
   }
   header .navbar-list__items a {
     font-size: 1rem;
