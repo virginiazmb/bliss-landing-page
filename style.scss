@@ -239,6 +239,101 @@ header {
   }
 }
 
+.third-section{
+  font-family: "Josefine-Sans-Light";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    font-size: 27px;
+    margin: 2rem 0 0 0;
+  }
+  &__review{
+    margin-top: 2rem;
+  }
+  &__circle-1{
+    margin: auto;
+    height: 81px;
+    width: 82px;
+    background: linear-gradient(148deg, (var(--mint-green), var(--baby-blue)));
+    border-radius: 100px;
+  }
+  &__box-1{
+    position: relative;
+    z-index: -1;
+    width: 200px;
+    margin-top: -40px;
+    padding: 3.5rem 2rem 2rem 2rem;
+    background-color: #E3EFEF;
+  }
+  &__circle-2{
+    margin: auto;
+    height: 81px;
+    width: 82px;
+    background: linear-gradient(148deg, (var(--baby-blue), var(--light-magenta)));
+    border-radius: 100px;
+  }
+  &__box-2{
+    position: relative;
+    z-index: -1;
+    width: 200px;
+    margin-top: -40px;
+    padding: 3.5rem 2rem 2rem 2rem;
+    background-color: #E3E5EF;
+  }
+  &__circle-3{
+    margin: auto;
+    height: 81px;
+    width: 82px;
+    background: linear-gradient(148deg, (var(--mint-green), var(--semidark-blue)));
+    border-radius: 100px;
+  }
+  &__box-3{
+    position: relative;
+    z-index: -1;
+    width: 200px;
+    margin-top: -40px;
+    padding: 3.5rem 2rem 2rem 2rem;
+    background-color: #e8edf4;
+  }
+  &__circle-4{
+    margin: auto;
+    height: 81px;
+    width: 82px;
+    background: linear-gradient(148deg, (var(--dark-lilac), var(--light-magenta)));
+    border-radius: 100px;
+  }
+  &__box-4{
+    position: relative;
+    z-index: -1;
+    width: 200px;
+    margin: -40px 0 40px 0;
+    padding: 3.5rem 2rem 2rem 2rem;
+    background-color: #efe8ef;
+  }
+  &__quote{
+    position: absolute;
+    top: 110px;
+  }
+  &__name{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  &__occupation{
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+  &__comment{
+    font-size: 17px;
+    line-height: 120%;
+    padding-left: 2rem;
+  }
+}
+
 //estilos del sidenav y del header para la versión desktop
 @media (min-width: 640px) {
   header {

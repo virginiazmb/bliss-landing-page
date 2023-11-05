@@ -214,6 +214,101 @@ header .first-section__wave {
   top: 20%;
 }
 
+.third-section {
+  font-family: "Josefine-Sans-Light";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.third-section__title {
+  text-align: center;
+  font-size: 27px;
+  margin: 2rem 0 0 0;
+}
+.third-section__review {
+  margin-top: 2rem;
+}
+.third-section__circle-1 {
+  margin: auto;
+  height: 81px;
+  width: 82px;
+  background: linear-gradient(148deg, var(--mint-green), var(--baby-blue));
+  border-radius: 100px;
+}
+.third-section__box-1 {
+  position: relative;
+  z-index: -1;
+  width: 200px;
+  margin-top: -40px;
+  padding: 3.5rem 2rem 2rem 2rem;
+  background-color: #E3EFEF;
+}
+.third-section__circle-2 {
+  margin: auto;
+  height: 81px;
+  width: 82px;
+  background: linear-gradient(148deg, var(--baby-blue), var(--light-magenta));
+  border-radius: 100px;
+}
+.third-section__box-2 {
+  position: relative;
+  z-index: -1;
+  width: 200px;
+  margin-top: -40px;
+  padding: 3.5rem 2rem 2rem 2rem;
+  background-color: #E3E5EF;
+}
+.third-section__circle-3 {
+  margin: auto;
+  height: 81px;
+  width: 82px;
+  background: linear-gradient(148deg, var(--mint-green), var(--semidark-blue));
+  border-radius: 100px;
+}
+.third-section__box-3 {
+  position: relative;
+  z-index: -1;
+  width: 200px;
+  margin-top: -40px;
+  padding: 3.5rem 2rem 2rem 2rem;
+  background-color: #e8edf4;
+}
+.third-section__circle-4 {
+  margin: auto;
+  height: 81px;
+  width: 82px;
+  background: linear-gradient(148deg, var(--dark-lilac), var(--light-magenta));
+  border-radius: 100px;
+}
+.third-section__box-4 {
+  position: relative;
+  z-index: -1;
+  width: 200px;
+  margin: -40px 0 40px 0;
+  padding: 3.5rem 2rem 2rem 2rem;
+  background-color: #efe8ef;
+}
+.third-section__quote {
+  position: absolute;
+  top: 110px;
+}
+.third-section__name {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+.third-section__occupation {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+.third-section__comment {
+  font-size: 17px;
+  line-height: 120%;
+  padding-left: 2rem;
+}
+
 @media (min-width: 640px) {
   header .navbar-menu__toggle {
     display: none;
