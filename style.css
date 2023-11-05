@@ -18,7 +18,7 @@ body {
   --baby-blue: #9fb4cf;
   --dark-lilac: #9d9ab1;
   --semidark-blue: #93a5bb;
-  --mint-green: #B9E5CD;
+  --mint-green: #b9e5cd;
   --gradient-one: linear-gradient(
     0deg rgba(159, 180, 207, 1) 0%,
     rgba(204, 222, 224, 1) 95%
@@ -134,16 +134,11 @@ header .header-image__container .header-image__app {
   margin-top: -4.1rem;
   width: 185px;
 }
-<<<<<<< HEAD
 header .header-content__waves {
-  margin-top: -2rem;
+  margin-top: -3.5rem;
 }
 header .header-content__waves .img__wave {
   margin-bottom: -5px;
-=======
-header .first-section__wave {
-  margin: -12% 0 -2% 0;
->>>>>>> ee5665b34e11f35da9b74488c525ee67a9ec4058
 }
 
 .first-section {
@@ -252,7 +247,7 @@ header .first-section__wave {
   width: 200px;
   margin-top: -40px;
   padding: 3.5rem 2rem 2rem 2rem;
-  background-color: #E3EFEF;
+  background-color: #e3efef;
 }
 .third-section__circle-2 {
   margin: auto;
@@ -267,7 +262,7 @@ header .first-section__wave {
   width: 200px;
   margin-top: -40px;
   padding: 3.5rem 2rem 2rem 2rem;
-  background-color: #E3E5EF;
+  background-color: #e3e5ef;
 }
 .third-section__circle-3 {
   margin: auto;
@@ -319,7 +314,41 @@ header .first-section__wave {
   padding-left: 2rem;
 }
 
-@media (min-width: 640px) {
+@media screen and (min-width: 545px) {
+  header {
+    min-height: 20vh;
+  }
+  header .header-content__title {
+    font-size: 30px;
+    padding: 2.2rem 6.5rem 0 0.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 20px;
+    padding: 1rem 9rem 1rem 0.5rem;
+    margin: 0;
+  }
+  header .header-content__button {
+    margin: 0 1.5rem;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 1rem 0 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -4.8rem;
+    width: 215px;
+  }
+  header .header-content__waves {
+    margin-top: -4.9rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 640px) {
   header .navbar-menu__toggle {
     display: none;
   }
@@ -350,41 +379,227 @@ header .first-section__wave {
   }
   header .header-content__text {
     font-size: 20px;
-    padding: 0 11rem 0 1rem;
+    padding: 1rem 12rem 0 1rem;
   }
   header .header-content__button {
-    margin: 0 2rem;
-  }
-}
-@media (min-width: 545px) {
-  header {
-    min-height: 20vh;
-  }
-  header .header-content__title {
-    font-size: 30px;
-    padding: 3.2rem 4.5rem 0 0.5rem;
-    margin: 0;
-  }
-  header .header-content__text {
-    font-size: 20px;
-    padding: 1rem 5rem 1rem 0.5rem;
-    margin: 0;
-  }
-  header .header-content__button {
-    margin: 0 1.5rem;
+    margin: 1.5rem 2rem;
   }
   header .header-image__container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 0 6rem 0 5rem;
+    padding: 0 1rem 0 0;
   }
   header .header-image__container .header-image__app {
-    margin-top: -3.8rem;
-    width: 210px;
+    margin-top: -10.5rem;
+    width: 230px;
   }
   header .header-content__waves {
-    margin-top: -4.5rem;
+    margin-top: -6.7rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .header-content__title {
+    font-size: 36px;
+    padding: 2rem 18rem 0 2.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 23px;
+    padding: 1rem 21rem 0 2rem;
+  }
+  header .header-content__button {
+    margin: 1.5rem 2.7rem;
+    border-radius: 25px;
+  }
+  header .header-content__button a {
+    font-size: 20px;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 1rem 0 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -19.5rem;
+    width: 305px;
+  }
+  header .header-content__waves {
+    margin-top: -6.7rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 800px) {
+  header .header-content__title {
+    font-size: 37px;
+    padding: 2rem 18rem 0 2.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 23px;
+    padding: 1rem 21rem 0 2rem;
+  }
+  header .header-content__button {
+    margin: 1.5rem 2.7rem;
+    border-radius: 25px;
+  }
+  header .header-content__button a {
+    font-size: 20px;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 1rem 0 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -18.5rem;
+    width: 305px;
+  }
+  header .header-content__waves {
+    margin-top: -6.7rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 960px) {
+  header .header-content__title {
+    font-size: 37px;
+    padding: 2.8rem 26rem 0 5.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 23px;
+    padding: 1rem 28rem 0 5.3rem;
+  }
+  header .header-content__button {
+    margin: 1.5rem 5.8rem;
+    border-radius: 20px;
+  }
+  header .header-content__button a {
+    font-size: 21px;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 6rem 0 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -22.5rem;
+    width: 335px;
+  }
+  header .header-content__waves {
+    margin-top: -8.5rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .header-content__title {
+    font-size: 36.5px;
+    padding: 4.8rem 25rem 0 5.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 23px;
+    padding: 1rem 28rem 0 5.3rem;
+  }
+  header .header-content__button {
+    margin: 1.5rem 6.1rem;
+    border-radius: 20px;
+  }
+  header .header-content__button a {
+    font-size: 21px;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 5rem 0 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -21rem;
+    width: 350px;
+  }
+  header .header-content__waves {
+    margin-top: -9.7rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 1115px) {
+  header .header-content__title {
+    font-size: 38px;
+    padding: 4.8rem 26rem 0 9.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 25px;
+    padding: 1rem 32rem 0 9.6rem;
+  }
+  header .header-content__button {
+    margin: 1.5rem 10.1rem;
+    border-radius: 20px;
+  }
+  header .header-content__button a {
+    font-size: 21px;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 8rem 1rem 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -24rem;
+    width: 359px;
+  }
+  header .header-content__waves {
+    margin-top: -10.9rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  header .header-content__title {
+    font-size: 38px;
+    padding: 3.8rem 29rem 0 12.5rem;
+    margin: 0;
+  }
+  header .header-content__text {
+    font-size: 24.5px;
+    padding: 1rem 33rem 0 12.2rem;
+  }
+  header .header-content__button {
+    margin: 1.5rem 13.1rem;
+    border-radius: 20px;
+  }
+  header .header-content__button a {
+    font-size: 21px;
+  }
+  header .header-image__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 9rem 1rem 0;
+  }
+  header .header-image__container .header-image__app {
+    margin-top: -20rem;
+    width: 355px;
+  }
+  header .header-content__waves {
+    margin-top: -11.9rem;
   }
   header .header-content__waves .img__wave {
     margin-bottom: -5px;
