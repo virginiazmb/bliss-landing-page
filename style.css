@@ -8,6 +8,7 @@ body {
   background-color: var(--background-color);
   font-family: Montserrat, "Helvetica Neue", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -107,7 +108,7 @@ header .header-content__title {
 header .header-content__text {
   font-family: "Josefine-Sans-Regular";
   font-size: 18px;
-  padding: 0 1.6rem 0 0;
+  padding: 0 4.5rem 0 0;
 }
 header .header-content__button {
   border: none;
@@ -126,12 +127,16 @@ header .header-image__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 0 1.5rem 0 5rem;
+  padding: 0 2.3rem 0 5rem;
 }
 header .header-image__container .header-image__app {
   margin-top: -4.1rem;
+  width: 185px;
 }
-header .first-section__wave {
+header .header-content__waves {
+  margin-top: -2rem;
+}
+header .header-content__waves .img__wave {
   margin-bottom: -5px;
 }
 
@@ -218,24 +223,31 @@ header .first-section__wave {
   }
   header .header-content__title {
     font-size: 30px;
-    padding: 1rem 7rem 0 0;
+    padding: 3.2rem 4.5rem 0 0.5rem;
     margin: 0;
   }
   header .header-content__text {
     font-size: 20px;
-    padding: 0 10rem 0 0rem;
+    padding: 1rem 5rem 1rem 0.5rem;
+    margin: 0;
   }
   header .header-content__button {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
   }
   header .header-image__container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 0 3.5rem 0 5rem;
+    padding: 0 6rem 0 5rem;
   }
   header .header-image__container .header-image__app {
-    margin-top: -5rem;
-    width: 200px;
+    margin-top: -3.8rem;
+    width: 210px;
+  }
+  header .header-content__waves {
+    margin-top: -4.5rem;
+  }
+  header .header-content__waves .img__wave {
+    margin-bottom: -5px;
   }
 }/*# sourceMappingURL=style.css.map */
