@@ -291,7 +291,7 @@ header {
     width: 200px;
     margin-top: -40px;
     padding: 3.5rem 2rem 2rem 2rem;
-    background-color: #e3e5ef;
+    background-color: #e4e3ef;
   }
   &__circle-3 {
     margin: auto;
@@ -309,7 +309,7 @@ header {
     width: 200px;
     margin-top: -40px;
     padding: 3.5rem 2rem 2rem 2rem;
-    background-color: #e8edf4;
+    background-color: #e3edf3;
   }
   &__circle-4 {
     margin: auto;
@@ -327,7 +327,7 @@ header {
     width: 200px;
     margin: -40px 0 40px 0;
     padding: 3.5rem 2rem 2rem 2rem;
-    background-color: #efe8ef;
+    background-color: #efe8ee;
   }
   &__quote {
     position: absolute;
@@ -350,8 +350,143 @@ header {
   }
 }
 
-//estilos del sidenav y del header para la versión desktop
+//estilos de la cuarta seccion; equipo
+.fourth-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--light-magenta);
+  &__title {
+    font-family: Montserrat;
+    font-size: 29px;
+    text-align: center;
+    margin: 2.5rem 0 3rem 0;
+  }
+  &__box {
+    font-family: "Josefine-Sans-Light";
+    width: 162px;
+    height: 229px;
+    padding: 2rem 1rem;
+    margin: 0 0 4rem 0;
+    background-color: var(--background-color);
+    border-radius: 8px;
+  }
+  &__circle-1 {
+    margin: auto;
+    height: 115px;
+    width: 115px;
+    background: #EACFCF;
+    border-radius: 100px;
+  }
+  &__circle-2 {
+    margin: auto;
+    height: 115px;
+    width: 115px;
+    background: #CFE0EA;
+    border-radius: 100px;
+  }
+  &__circle-3 {
+    margin: auto;
+    height: 115px;
+    width: 115px;
+    background: #CFEAD5;
+    border-radius: 100px;
+  }
+  &__name {
+    font-size: 21px;
+    text-align: center;
+    margin: 1rem 0 0.4rem 0;
+  }
+  &__position {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+  &__social{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    margin: 2rem 0 0 0;
+  }
+  &__icon-1{
+    border: 1px solid;
+    padding: 6px 7px;
+    border-radius: 100px;
+  }
+  &__icon-2{
+    border: 1px solid;
+    padding: 6px 9px;
+    border-radius: 100px;
+    text-align: center;
+    justify-content: center;
+  }
+  &__icon-3{
+    border: 1px solid;
+    padding: 6px 7px;
+    border-radius: 100px;
+  }
+  &__icon-1:hover, &__icon-2:hover, &__icon-3:hover {
+    background-color: #f6ecf5;
+  }
+}
 
+//estilos del footer
+.footer{
+  font-family: "Josefine-Sans-Light";
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  &-logo{
+    padding-top: 2.5rem;
+  }
+  &-bliss{
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+  }
+  &-line {
+    width: 97px;
+    height: 1px;
+    background-color: #B9E5CD;
+    border-radius: 20px;
+    margin-bottom: 2.5rem;
+    margin: 0;
+  }
+  &-rights{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.28px;
+  }
+  &-sections{
+    .footer-list {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      margin: 0.5rem 0 0 0;
+      padding: 0;
+      &__items {
+        list-style-type: none;
+        text-align: center;
+        margin: 0 10px 35px 10px;
+        a {
+          font-size: 1rem;
+          text-decoration: none;
+          color: #979797;
+          letter-spacing: 0.5px;
+        }
+        a:hover{
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+//estilos del sidenav y del header para la versión desktop
 @media screen and (min-width: 545px) {
   header {
     min-height: 20vh;
