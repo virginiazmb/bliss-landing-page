@@ -47,6 +47,12 @@ body {
   src: url(/assets/fonts/JosefinSans-Bold.ttf);
 }
 
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // estilos del navbar y del header para la versión mobile
 header {
   background: rgb(159, 180, 207);
@@ -161,10 +167,8 @@ header {
 
 //estilos de la primera sección; apartados
 .first-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@include flexbox;
+flex-direction: column;
   &__title {
     font-family: "Montserrat";
     text-align: center;
@@ -247,15 +251,15 @@ header {
 
 //estilos de la tercera seccion; reviews
 .third-section {
-  font-family: "Josefine-Sans-Light";
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox;
   flex-direction: column;
+  font-family: "Josefine-Sans-Light";
   &__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
     text-align: center;
-    font-size: 27px;
-    margin: 2rem 0 0 0;
+    font-size: 29px;
+    margin: 3rem 0 0 0;
   }
   &__review {
     margin-top: 2rem;
@@ -352,9 +356,7 @@ header {
 
 //estilos de la cuarta seccion; equipo
 .fourth-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox;
   flex-direction: column;
   background-color: var(--light-magenta);
   &__title {
@@ -486,6 +488,9 @@ header {
   }
 }
 
+
+
+
 //estilos del sidenav y del header para la versión desktop
 @media screen and (min-width: 545px) {
   header {
@@ -522,6 +527,33 @@ header {
       }
     }
   }
+
+  .first-section {
+      &__title {
+        font-size: 32px;
+        margin: 0rem 0 0.8rem 0;
+      }
+      &__line {
+        width: 240px;
+        height: 2.5px;
+        margin-bottom: 2.5rem;
+      }
+      &__previews {
+        font-size: 15px;
+        margin-bottom: 22px;
+        .section-previews__image {
+          z-index: 1;
+          margin-left: 4.5rem;
+        }
+        .section-previews__box {
+          margin: 0px 80px 30px -50px;
+          align-self: center;
+        }
+      }
+      .second-section__wave {
+        margin: -8% 0 -4% 0;
+      }
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -582,7 +614,44 @@ header {
       }
     }
   }
-}
+
+  .first-section {
+    &__title {
+      font-size: 33px;
+      margin: 0rem 0 0.8rem 0;
+    }
+    &__line {
+      width: 295px;
+      height: 2.5px;
+      margin-bottom: 3.5rem;
+    }
+    &__previews {
+      font-size: 15px;
+      margin-bottom: 22px;
+      .section-previews__image {
+        z-index: 1;
+        margin-left: 8.5rem;
+        height: 318px;
+      }
+      .section-previews__box {
+        margin: 0px 108px 30px -60px;
+        align-self: center;
+        .section-previews__text {
+          margin: -10px 0 0 -30px;
+          padding: 25px 10px 25px 30px;
+          font-size: 16px;
+        }
+        .section-previews__title {
+          font-size: 20px;
+        }
+      }
+      }
+    }
+    .second-section__wave {
+      margin: -8% 0 -4% 0;
+    }
+  }
+
 
 
 @media screen and (min-width: 768px) {
@@ -662,6 +731,42 @@ header {
       }
     }
   }
+
+  /*.first-section {
+    &__title {
+      font-size: 33px;
+      margin: 0rem 0 0.8rem 0;
+    }
+    &__line {
+      width: 295px;
+      height: 2.5px;
+      margin-bottom: 3.5rem;
+    }
+    &__previews {
+      font-size: 15px;
+      margin-bottom: 22px;
+      .section-previews__image {
+        z-index: 1;
+        margin-left: 8.5rem;
+        height: 318px;
+      }
+      .section-previews__box {
+        margin: 0px 108px 30px -60px;
+        align-self: center;
+        .section-previews__text {
+          margin: -10px 0 0 -30px;
+          padding: 25px 10px 25px 30px;
+          font-size: 16px;
+        }
+        .section-previews__title {
+          font-size: 20px;
+        }
+      }
+      }
+    }
+    .second-section__wave {
+      margin: -8% 0 -4% 0;
+    }*/
 }
 
 
