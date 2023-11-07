@@ -186,7 +186,7 @@ header .header-content__waves .img__wave {
 
 .second-section {
   background-color: var(--mint-green);
-  height: 70vh;
+  height: 55vh;
 }
 .second-section__title {
   text-align: center;
@@ -456,17 +456,18 @@ header .header-content__waves .img__wave {
     min-height: 20vh;
   }
   header .header-content__title {
-    font-size: 30px;
-    padding: 2.2rem 6.5rem 0 0.5rem;
+    font-size: 28px;
+    padding: 3.2rem 8.5rem 0 0.5rem;
     margin: 0;
   }
   header .header-content__text {
-    font-size: 20px;
-    padding: 1rem 9rem 1rem 0.5rem;
+    font-size: 18.6px;
+    padding: 1rem 11rem 1rem 0.5rem;
     margin: 0;
   }
   header .header-content__button {
     margin: 0 1.5rem;
+    padding: 0.6rem 1rem;
   }
   header .header-image__container {
     display: flex;
@@ -485,7 +486,7 @@ header .header-content__waves .img__wave {
     margin-bottom: -5px;
   }
   .first-section__title {
-    font-size: 32px;
+    font-size: 27px;
     margin: 0rem 0 0.8rem 0;
   }
   .first-section__line {
@@ -494,8 +495,7 @@ header .header-content__waves .img__wave {
     margin-bottom: 2.5rem;
   }
   .first-section__previews {
-    font-size: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
   }
   .first-section__previews .section-previews__image {
     z-index: 1;
@@ -506,7 +506,7 @@ header .header-content__waves .img__wave {
     align-self: center;
   }
   .first-section .second-section__wave {
-    margin: -8% 0 -4% 0;
+    margin: -6% 0 -4% 0;
   }
 }
 @media screen and (min-width: 640px) {
@@ -530,17 +530,17 @@ header .header-content__waves .img__wave {
     margin-top: -20px;
   }
   header .navbar-list__items a {
-    font-size: 1rem;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
   }
   header .header-content__title {
-    font-size: 32px;
+    font-size: 29px;
     padding: 1rem 11rem 0 1rem;
     margin: 0;
   }
   header .header-content__text {
-    font-size: 20px;
-    padding: 1rem 12rem 0 1rem;
+    font-size: 16px;
+    padding: 1rem 17rem 0 1rem;
   }
   header .header-content__button {
     margin: 1.5rem 2rem;
@@ -562,7 +562,7 @@ header .header-content__waves .img__wave {
     margin-bottom: -5px;
   }
   .first-section__title {
-    font-size: 33px;
+    font-size: 31px;
     margin: 0rem 0 0.8rem 0;
   }
   .first-section__line {
@@ -593,6 +593,40 @@ header .header-content__waves .img__wave {
   }
   .second-section__wave {
     margin: -8% 0 -4% 0;
+  }
+  .second-section {
+    background-color: var(--mint-green);
+    height: 55vh;
+  }
+  .second-section__title {
+    text-align: center;
+    font-size: 27px;
+    margin: 0rem 3rem 1rem 3rem;
+  }
+  .second-section__container {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    max-width: 380px;
+    margin: auto;
+  }
+  .second-section__image-1 {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    z-index: 1;
+  }
+  .second-section__image-2 {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .second-section__image-3 {
+    position: absolute;
+    right: 10%;
+    top: 20%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -630,7 +664,7 @@ header .header-content__waves .img__wave {
   }
   .second-section {
     background-color: var(--mint-green);
-    height: 68vh;
+    height: 50vh;
   }
   .second-section__title {
     text-align: center;
@@ -640,20 +674,20 @@ header .header-content__waves .img__wave {
 }
 @media screen and (min-width: 800px) {
   header .header-content__title {
-    font-size: 37px;
+    font-size: 33px;
     padding: 2rem 18rem 0 2.5rem;
     margin: 0;
   }
   header .header-content__text {
-    font-size: 23px;
-    padding: 1rem 21rem 0 2rem;
+    font-size: 21px;
+    padding: 1rem 24rem 0 2rem;
   }
   header .header-content__button {
-    margin: 1.5rem 2.7rem;
-    border-radius: 25px;
+    margin: 1.5rem 3.5rem;
+    border-radius: 13px;
   }
   header .header-content__button a {
-    font-size: 20px;
+    font-size: 18px;
   }
   header .header-image__container {
     display: flex;
@@ -672,7 +706,7 @@ header .header-content__waves .img__wave {
     margin-bottom: -5px;
   }
   .first-section__title {
-    font-size: 35px;
+    font-size: 31px;
     margin: 0rem 0 0.8rem 0;
   }
   .first-section__line {
@@ -727,20 +761,20 @@ header .header-content__waves .img__wave {
 }
 @media screen and (min-width: 960px) {
   header .header-content__title {
-    font-size: 37px;
+    font-size: 35px;
     padding: 2.8rem 26rem 0 5.5rem;
     margin: 0;
   }
   header .header-content__text {
-    font-size: 23px;
+    font-size: 21.5px;
     padding: 1rem 28rem 0 5.3rem;
   }
   header .header-content__button {
-    margin: 1.5rem 5.8rem;
+    margin: 1.5rem 6.5rem;
     border-radius: 20px;
   }
   header .header-content__button a {
-    font-size: 21px;
+    font-size: 18px;
   }
   header .header-image__container {
     display: flex;
@@ -840,20 +874,20 @@ header .header-content__waves .img__wave {
 }
 @media screen and (min-width: 1024px) {
   header .header-content__title {
-    font-size: 36.5px;
+    font-size: 34.5px;
     padding: 4.8rem 25rem 0 5.5rem;
     margin: 0;
   }
   header .header-content__text {
-    font-size: 23px;
+    font-size: 21px;
     padding: 1rem 28rem 0 5.3rem;
   }
   header .header-content__button {
     margin: 1.5rem 6.1rem;
-    border-radius: 20px;
+    border-radius: 15px;
   }
   header .header-content__button a {
-    font-size: 21px;
+    font-size: 20px;
   }
   header .header-image__container {
     display: flex;
@@ -862,8 +896,8 @@ header .header-content__waves .img__wave {
     padding: 0 5rem 0 0;
   }
   header .header-image__container .header-image__app {
-    margin-top: -21rem;
-    width: 350px;
+    margin-top: -20rem;
+    width: 345px;
   }
   header .header-content__waves {
     margin-top: -9.7rem;
@@ -1047,7 +1081,7 @@ header .header-content__waves .img__wave {
   }
   .second-section {
     background-color: var(--mint-green);
-    height: 76vh;
+    height: 67vh;
   }
   .second-section__title {
     text-align: center;
@@ -1056,7 +1090,7 @@ header .header-content__waves .img__wave {
   }
   .second-section__container {
     width: 100%;
-    height: 75%;
+    height: 72%;
     position: relative;
     max-width: 395px;
     margin: auto;
@@ -1065,7 +1099,7 @@ header .header-content__waves .img__wave {
     position: absolute;
     left: -5%;
     top: 30%;
-    height: 370px;
+    height: 340px;
     z-index: 1;
   }
   .second-section__image-2 {
@@ -1073,14 +1107,14 @@ header .header-content__waves .img__wave {
     margin: auto;
     left: 0;
     right: 0;
-    height: 425px;
+    height: 420px;
     text-align: center;
   }
   .second-section__image-3 {
     position: absolute;
     right: -5%;
     top: 30%;
-    height: 370px;
+    height: 355px;
   }
   .background .fourth-section__title {
     font-size: 32px;
