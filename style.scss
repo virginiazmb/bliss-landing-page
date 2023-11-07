@@ -87,6 +87,7 @@ header {
     position: fixed;
   }
   .navbar-list {
+    z-index: 1;
     position: fixed;
     inset: 0 0 0 45%;
     margin: 0;
@@ -216,11 +217,12 @@ flex-direction: column;
 //estilos de la segunda sección; mini juegos
 .second-section {
   background-color: var(--mint-green);
-  height: 55vh;
+  height: 65vh;
   &__title {
     text-align: center;
     font-size: 27px;
     margin: 0rem 3rem 1rem 3rem;
+    padding: 1rem 0 1rem 0;
   }
   &__container {
     width: 100%;
@@ -259,7 +261,7 @@ flex-direction: column;
     font-weight: 600;
     text-align: center;
     font-size: 29px;
-    margin: 3rem 0 0 0;
+    padding: 3rem 0 0 0;
   }
   &__review {
     margin-top: 2rem;
@@ -731,7 +733,7 @@ flex-direction: column;
   }
   .second-section {
     background-color: var(--mint-green);
-    height: 50vh;
+    height: 60vh;
     &__title {
       text-align: center;
       font-size: 27px;
@@ -826,7 +828,7 @@ flex-direction: column;
         font-weight: 600;
         text-align: center;
         font-size: 35px;
-        margin: 3rem 0 0 0;
+        padding: 3rem 0 0 0;
       }
 
       &__box-4 {
@@ -1207,7 +1209,7 @@ flex-direction: column;
       &__title {
         text-align: center;
         font-size: 30px;
-        margin: -3rem 25rem 0rem 25rem;
+        margin: -3rem 25rem 1rem 25rem;
       }
       &__container {
         width: 100%;
@@ -1235,7 +1237,7 @@ flex-direction: column;
         position: absolute;
         right: -5%;
         top: 30%;
-        height: 355px;
+        height: 350px;
       }
     }
 
