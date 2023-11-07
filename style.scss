@@ -1251,3 +1251,43 @@ flex-direction: column;
     }
   }
 }
+
+@media screen and (min-width: 1320px) {
+  header{
+    .header-content {
+      &__title {
+        font-size: 37px;
+        padding: 5.8rem 36rem 0 12.5rem;
+        margin: 0;
+      }
+      &__text {
+        font-size: 23.5px;
+        padding: 1rem 45rem 0 12.2rem;
+      }
+      &__button {
+        margin: 1.5rem 13.1rem;
+        border-radius: 15px;
+        a{
+          font-size: 18px;
+        }
+      }
+    }
+    .header-image__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0 11rem 1rem 0;
+      .header-image__app {
+        margin-top: -23rem;
+        width: 355px;
+      }
+    }
+    .header-content__waves {
+      margin-top: -11.9rem;
+      .img__wave {
+        margin-bottom: -5px;
+      }
+    }
+  }
+  
+}
