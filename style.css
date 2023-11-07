@@ -808,9 +808,9 @@ header .header-content__waves .img__wave {
   }
   .second-section__image-1 {
     position: absolute;
-    left: 7%;
-    top: 18%;
-    height: 270px;
+    left: -5%;
+    top: 20%;
+    height: 370px;
     z-index: 1;
   }
   .second-section__image-2 {
@@ -819,14 +819,14 @@ header .header-content__waves .img__wave {
     left: 0;
     right: 0;
     bottom: -3%;
-    height: 305px;
+    height: 425px;
     text-align: center;
   }
   .second-section__image-3 {
     position: absolute;
-    right: 9%;
-    top: 16%;
-    height: 275px;
+    right: -5%;
+    top: 20%;
+    height: 370px;
   }
   .background .fourth-section__title {
     font-size: 32px;
@@ -1027,16 +1027,17 @@ header .header-content__waves .img__wave {
   .first-section__previews .section-previews__image {
     z-index: 1;
     margin-left: 22rem;
-    height: 312px;
+    height: 400px;
   }
   .first-section__previews .section-previews__box {
-    margin: 0 24rem 3rem -3rem;
+    margin: 0 24rem 3rem -4rem;
     align-self: center;
   }
   .first-section__previews .section-previews__box .section-previews__text {
     margin: -13px 0 0 -35px;
-    padding: 26px 19px 38px 36px;
-    font-size: 18px;
+    padding: 40px 25px 40px 40px;
+    font-size: 22px;
+    line-height: 25px;
   }
   .first-section__previews .section-previews__box .section-previews__title {
     font-size: 23px;
@@ -1062,9 +1063,9 @@ header .header-content__waves .img__wave {
   }
   .second-section__image-1 {
     position: absolute;
-    left: 7%;
-    top: 22%;
-    height: 270px;
+    left: -5%;
+    top: 30%;
+    height: 370px;
     z-index: 1;
   }
   .second-section__image-2 {
@@ -1072,14 +1073,14 @@ header .header-content__waves .img__wave {
     margin: auto;
     left: 0;
     right: 0;
-    height: 305px;
+    height: 425px;
     text-align: center;
   }
   .second-section__image-3 {
     position: absolute;
-    right: 6%;
-    top: 20%;
-    height: 275px;
+    right: -5%;
+    top: 30%;
+    height: 370px;
   }
   .background .fourth-section__title {
     font-size: 32px;
