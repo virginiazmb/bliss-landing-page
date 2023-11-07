@@ -216,7 +216,7 @@ flex-direction: column;
 //estilos de la psegunda sección; mini juegos
 .second-section {
   background-color: var(--mint-green);
-  height: 60vh;
+  height: 70vh;
   &__title {
     text-align: center;
     font-size: 27px;
@@ -355,16 +355,18 @@ flex-direction: column;
 }
 
 //estilos de la cuarta seccion; equipo
-.fourth-section {
-  @include flexbox;
-  flex-direction: column;
+.background{
   background-color: var(--light-magenta);
-  &__title {
+  .fourth-section__title {
     font-family: Montserrat;
     font-size: 29px;
     text-align: center;
-    margin: 2.5rem 0 3rem 0;
+    margin: 0 0 3rem 0;
+    padding-top: 3rem;
   }
+.fourth-section {
+  @include flexbox;
+  flex-direction: column;
   &__box {
     font-family: "Josefine-Sans-Light";
     width: 162px;
@@ -431,6 +433,7 @@ flex-direction: column;
   &__icon-1:hover, &__icon-2:hover, &__icon-3:hover {
     background-color: #f6ecf5;
   }
+}
 }
 
 //estilos del footer
@@ -691,6 +694,16 @@ flex-direction: column;
       }
     }
   }
+
+  .second-section {
+    background-color: var(--mint-green);
+    height: 68vh;
+    &__title {
+      text-align: center;
+      font-size: 27px;
+      margin: -3rem 10rem 1rem 10rem;
+    }
+  }
 }
 
 
@@ -732,31 +745,30 @@ flex-direction: column;
     }
   }
 
-  /*.first-section {
+  .first-section {
     &__title {
-      font-size: 33px;
+      font-size: 35px;
       margin: 0rem 0 0.8rem 0;
     }
     &__line {
-      width: 295px;
+      width: 350px;
       height: 2.5px;
       margin-bottom: 3.5rem;
     }
     &__previews {
-      font-size: 15px;
-      margin-bottom: 22px;
+      margin-bottom: 25px;
       .section-previews__image {
         z-index: 1;
-        margin-left: 8.5rem;
-        height: 318px;
+        margin-left: 12.5rem;
+        height: 319px;
       }
       .section-previews__box {
-        margin: 0px 108px 30px -60px;
+        margin: -1px 167px 37px -50px;
         align-self: center;
         .section-previews__text {
-          margin: -10px 0 0 -30px;
-          padding: 25px 10px 25px 30px;
-          font-size: 16px;
+          margin: -6px 0 0 -27px;
+          padding: 22px 28px 18px 30px;
+          font-size: 17px;
         }
         .section-previews__title {
           font-size: 20px;
@@ -766,7 +778,32 @@ flex-direction: column;
     }
     .second-section__wave {
       margin: -8% 0 -4% 0;
-    }*/
+    }
+
+    .third-section {
+      display: flex;
+      flex-direction: row;
+      gap: 2.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+
+      &__title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        text-align: center;
+        font-size: 35px;
+        margin: 3rem 0 0 0;
+      }
+
+      &__box-4 {
+        position: relative;
+        z-index: -1;
+        width: 200px;
+        margin: -40px 0 0 0;
+      }
+    }
+    
 }
 
 
@@ -805,6 +842,92 @@ flex-direction: column;
       .img__wave {
         margin-bottom: -5px;
       }
+    }
+  }
+
+  .first-section {
+    &__title {
+      font-size: 32px;
+      margin: -1.5rem 0 0.8rem 0;
+    }
+    &__line {
+      width: 350px;
+      height: 2.5px;
+      margin-bottom: 3.5rem;
+    }
+    &__previews {
+      margin-bottom: 24px;
+      .section-previews__image {
+        z-index: 1;
+        margin-left: 16.5rem;
+        height: 317px;
+      }
+      .section-previews__box {
+        margin: 0 14rem 3rem -4.3rem;
+        align-self: center;
+        .section-previews__text {
+          margin: -8px 0 0 -25px;
+          padding: 25px 28px 26px 30px;
+          font-size: 17px;
+        }
+        .section-previews__title {
+          font-size: 20px;
+        }
+      }
+      }
+    }
+    .second-section__wave {
+      margin: -7% 0 -4% 0;
+    }
+
+    .second-section {
+      background-color: var(--mint-green);
+      height: 75vh;
+      &__title {
+        text-align: center;
+        font-size: 29px;
+        margin: -2.4rem 17rem 1rem 17rem;
+      }
+      &__container {
+        width: 100%;
+        height: 68%;
+        position: relative;
+        max-width: 395px;
+        margin: auto;
+      }
+      &__image-1 {
+        position: absolute;
+        left: 7%;
+        top: 18%;
+        height: 270px;
+        z-index: 1;
+      }
+      &__image-2 {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: -3%;
+        height: 305px;
+        text-align: center;
+      }
+      &__image-3 {
+        position: absolute;
+        right: 9%;
+        top: 16%;
+        height: 275px;
+      }
+    }
+
+    .background{
+      .fourth-section__title {
+        font-size: 32px;
+      }
+    .fourth-section {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
   }
 }
@@ -847,6 +970,41 @@ flex-direction: column;
       }
     }
   }
+
+  .first-section {
+    &__title {
+      font-size: 32px;
+      margin: -1rem 0 0.8rem 0;
+    }
+    &__line {
+      width: 405px;
+      height: 2.5px;
+      margin-bottom: 3.5rem;
+    }
+    &__previews {
+      margin-bottom: 23px;
+      .section-previews__image {
+        z-index: 1;
+        margin-left: 16.5rem;
+        height: 305px;
+      }
+      .section-previews__box {
+        margin: 0 16rem 3rem -3.3rem;
+        align-self: center;
+        .section-previews__text {
+          margin: -14px 0 0 -33px;
+          padding: 31px 57px 27px 30px;
+          font-size: 17.6px;
+        }
+        .section-previews__title {
+          font-size: 22px;
+        }
+      }
+      }
+    }
+    .second-section__wave {
+      margin: -8% 0 -4% 0;
+    }
 }
 
 
@@ -887,10 +1045,57 @@ flex-direction: column;
       }
     }
   }
+
+  .first-section {
+    &__title {
+      font-size: 32px;
+      margin: -1rem 0 0.8rem 0;
+    }
+    &__line {
+      width: 405px;
+      height: 2.5px;
+      margin-bottom: 3.5rem;
+    }
+    &__previews {
+      margin-bottom: 23.5px;
+      .section-previews__image {
+        z-index: 1;
+        margin-left: 17.7rem;
+        height: 305px;
+      }
+      .section-previews__box {
+        margin: 0 20rem 3rem -3.3rem;
+        align-self: center;
+        .section-previews__text {
+          margin: -14px 0 0 -33px;
+          padding: 31px 57px 27px 30px;
+          font-size: 18px;
+        }
+        .section-previews__title {
+          font-size: 22px;
+        }
+      }
+      }
+    }
+    .second-section__wave {
+      margin: -8% 0 -4% 0;
+    }
+
+    .background{
+      .fourth-section__title {
+        font-size: 32px;
+      }
+    .fourth-section {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1240px) {
   header{
     .header-content {
       &__title {
@@ -925,6 +1130,91 @@ flex-direction: column;
       .img__wave {
         margin-bottom: -5px;
       }
+    }
+  }
+
+  .first-section {
+    &__title {
+      font-size: 32px;
+      margin: -2rem 0 0.8rem 0;
+    }
+    &__line {
+      width: 350px;
+      height: 2.5px;
+      margin-bottom: 3.5rem;
+    }
+    &__previews {
+      margin-bottom: 15px;
+      .section-previews__image {
+        z-index: 1;
+        margin-left: 22rem;
+        height: 312px;
+      }
+      .section-previews__box {
+        margin: 0 24rem 3rem -3rem;
+        align-self: center;
+        .section-previews__text {
+          margin: -13px 0 0 -35px;
+          padding: 26px 19px 38px 36px;
+          font-size: 18px;
+        }
+        .section-previews__title {
+          font-size: 23px;
+        }
+      }
+      }
+    }
+    .second-section__wave {
+      margin: -8% 0 -4% 0;
+    }
+
+    .second-section {
+      background-color: var(--mint-green);
+      height: 76vh;
+      &__title {
+        text-align: center;
+        font-size: 30px;
+        margin: -3rem 25rem 1rem 25rem;
+      }
+      &__container {
+        width: 100%;
+        height: 75%;
+        position: relative;
+        max-width: 395px;
+        margin: auto;
+      }
+      &__image-1 {
+        position: absolute;
+        left: 7%;
+        top: 22%;
+        height: 270px;
+        z-index: 1;
+      }
+      &__image-2 {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        height: 305px;
+        text-align: center;
+      }
+      &__image-3 {
+        position: absolute;
+        right: 6%;
+        top: 20%;
+        height: 275px;
+      }
+    }
+
+    .background{
+      .fourth-section__title {
+        font-size: 32px;
+      }
+    .fourth-section {
+      display: flex;
+      flex-direction: row;
+      gap: 6rem;
+      flex-wrap: wrap;
     }
   }
 }
