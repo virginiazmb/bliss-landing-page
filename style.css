@@ -1083,7 +1083,7 @@ header .header-content__waves .img__wave {
   }
   .second-section {
     background-color: var(--mint-green);
-    height: 75vh;
+    height: 80vh;
   }
   .second-section__title {
     text-align: center;
@@ -1092,15 +1092,15 @@ header .header-content__waves .img__wave {
   }
   .second-section__container {
     width: 100%;
-    height: 72%;
+    height: 65%;
     position: relative;
     max-width: 395px;
     margin: auto;
   }
   .second-section__image-1 {
     position: absolute;
-    left: -5%;
-    top: 30%;
+    left: -4%;
+    top: 16%;
     height: 340px;
     z-index: 1;
   }
@@ -1111,11 +1111,12 @@ header .header-content__waves .img__wave {
     right: 0;
     height: 420px;
     text-align: center;
+    top: 0;
   }
   .second-section__image-3 {
     position: absolute;
-    right: -5%;
-    top: 30%;
+    right: -4%;
+    top: 16%;
     height: 350px;
   }
   .background .fourth-section__title {
