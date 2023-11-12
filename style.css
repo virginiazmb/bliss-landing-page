@@ -68,6 +68,7 @@ header .navbar-menu__toggle {
 header .navbar-menu__toggle[aria-expanded=true] {
   background: url(/assets/svg/close.svg) no-repeat center;
   position: fixed;
+  z-index: 999;
 }
 header .navbar-list {
   z-index: 1;
@@ -335,34 +336,31 @@ header .header-content__waves .img__wave {
   flex-direction: column;
 }
 .background .fourth-section__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Josefine-Sans-Light";
-  width: 162px;
-  height: 229px;
-  padding: 2rem 1rem;
+  width: 170px;
+  height: 270px;
+  padding: 2rem 2rem;
   margin: 0 0 4rem 0;
   background-color: var(--background-color);
   border-radius: 8px;
 }
 .background .fourth-section__circle-1 {
-  margin: auto;
-  height: 115px;
-  width: 115px;
-  background: #EACFCF;
-  border-radius: 100px;
+  height: 155px;
+  width: 147px;
+  border-radius: 90px;
 }
 .background .fourth-section__circle-2 {
-  margin: auto;
-  height: 115px;
-  width: 115px;
-  background: #CFE0EA;
-  border-radius: 100px;
+  height: 157px;
+  width: 152px;
+  border-radius: 150px;
 }
 .background .fourth-section__circle-3 {
-  margin: auto;
-  height: 115px;
-  width: 115px;
-  background: #CFEAD5;
-  border-radius: 100px;
+  height: 160px;
+  width: 155px;
+  border-radius: 150px;
 }
 .background .fourth-section__name {
   font-size: 21px;
@@ -384,13 +382,14 @@ header .header-content__waves .img__wave {
   border: 1px solid;
   padding: 6px 7px;
   border-radius: 100px;
+  margin-right: 1rem;
 }
 .background .fourth-section__icon-2 {
   border: 1px solid;
   padding: 6px 9px;
   border-radius: 100px;
   text-align: center;
-  justify-content: center;
+  margin-right: 1rem;
 }
 .background .fourth-section__icon-3 {
   border: 1px solid;
