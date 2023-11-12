@@ -211,14 +211,14 @@ flex-direction: column;
     }
   }
   .second-section__wave {
-    margin: -12% 0 -2% 0;
+    margin: -20px 0 -20px 0;
   }
 }
 
 //estilos de la segunda sección; mini juegos
 .second-section {
   background-color: var(--mint-green);
-  height: 65vh;
+  height: 65%;
   &__title {
     text-align: center;
     font-size: 27px;
